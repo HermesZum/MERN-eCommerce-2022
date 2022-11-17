@@ -1,3 +1,4 @@
+import { LinkContainer } from "react-router-bootstrap";
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons'
@@ -7,12 +8,19 @@ const Header = () => {
         <header>
             <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
                 <Container>
-                    <Navbar.Brand href="/">TheShop</Navbar.Brand>
+                    <LinkContainer to="/">
+                        <Navbar.Brand>TheShop</Navbar.Brand>
+                    </LinkContainer>
+
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link href="/cart"><FontAwesomeIcon icon={ faShoppingCart } />Cart</Nav.Link>
-                            <Nav.Link href="/login"><FontAwesomeIcon icon={ faUser } />Sign In</Nav.Link>
+                            <LinkContainer to="/cart">
+                                <Nav.Link><FontAwesomeIcon icon={ faShoppingCart } />Cart</Nav.Link>
+                            </LinkContainer>
+                            <LinkContainer to="/login">
+                                <Nav.Link><FontAwesomeIcon icon={ faUser } />Sign In</Nav.Link>
+                            </LinkContainer>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
