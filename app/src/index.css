@@ -2,6 +2,10 @@ main {
     min-height: 80vh;
 }
 
+h3 {
+    padding: 1rem 0;
+}
+
 .svg-inline--fa {
     margin-right: 5px;
 }
