@@ -1,1 +1,7 @@
+main {
+    min-height: 80vh;
+}
 
+.svg-inline--fa {
+    margin-right: 5px;
+}
