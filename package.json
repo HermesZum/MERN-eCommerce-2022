@@ -4,7 +4,10 @@
   "description": "Create a complete website in Full-stack MERN.",
   "main": "backend/server.js",
   "scripts": {
-    "start": "npx nodemon backend/server.js",
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix app",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "3Gear",
@@ -13,6 +16,7 @@
     "express": "^4.18.2"
   },
   "devDependencies": {
+    "concurrently": "^7.5.0",
     "nodemon": "^2.0.20"
   }
 }
