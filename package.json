@@ -1,0 +1,15 @@
+{
+  "name": "mern-ecommerce-2022",
+  "version": "1.0.0",
+  "description": "Create a complete website in Full-stack MERN.",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "3Gear",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
