@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Create a complete website in Full-stack MERN.",
   "main": "backend/server.js",
+  "type": "module",
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon backend/server",
